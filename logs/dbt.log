@@ -1161,3 +1161,50 @@ KeyboardInterrupt
 [0m18:15:48.604034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB10AE9820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB2C4F20F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB10C77560>]}
 [0m18:15:48.604034 [debug] [MainThread]: Flushing usage events
 [0m18:15:50.094342 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:00:57.549474 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F6EADA93D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F6EE7EC350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F6EDD33C20>]}
+
+
+============================== 19:00:57.554004 | e77f2614-88b4-4fc4-becb-642cd0f5af12 ==============================
+[0m19:00:57.554004 [info ] [MainThread]: Running with dbt=1.12.0
+[0m19:00:57.554004 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\chuck\\Learning\\DBT_Azure_Databricks\\ygz_dbt_databricks', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt deps', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\chuck\\Learning\\DBT_Azure_Databricks\\ygz_dbt_databricks\\logs'}
+[0m19:00:57.673741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e77f2614-88b4-4fc4-becb-642cd0f5af12', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F6F0863170>]}
+[0m19:00:57.703895 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m19:00:57.703895 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m19:00:57.708206 [debug] [MainThread]: Command `dbt deps` succeeded at 19:00:57.708206 after 0.37 seconds
+[0m19:00:57.708206 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F6F04D1D60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F6EE3CA2A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F6F0863170>]}
+[0m19:00:57.708206 [debug] [MainThread]: Flushing usage events
+[0m19:00:59.072711 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:01:25.393812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020120A52E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002012026DD60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201204DD5B0>]}
+
+
+============================== 19:01:25.393812 | a7bff8fc-79f7-4640-af77-db42313067e7 ==============================
+[0m19:01:25.393812 [info ] [MainThread]: Running with dbt=1.12.0
+[0m19:01:25.393812 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\chuck\\Learning\\DBT_Azure_Databricks\\ygz_dbt_databricks', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt deps', 'log_path': 'C:\\Users\\chuck\\Learning\\DBT_Azure_Databricks\\ygz_dbt_databricks\\logs'}
+[0m19:01:25.483890 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a7bff8fc-79f7-4640-af77-db42313067e7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002011E7CEC90>]}
+[0m19:01:25.513733 [debug] [MainThread]: Set downloads directory='C:\Users\chuck\AppData\Local\Temp\dbt-downloads-tb13r_nb'
+[0m19:01:25.513733 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m19:01:25.705100 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m19:01:25.705100 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m19:01:25.886488 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m19:01:25.891602 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/metaplane/dbt_expectations.json
+[0m19:01:26.063913 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/metaplane/dbt_expectations.json 200
+[0m19:01:26.063913 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/godatadriven/dbt_date.json
+[0m19:01:26.239909 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/godatadriven/dbt_date.json 200
+[0m19:01:26.250057 [info ] [MainThread]: Updating lock file in file path: C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks/package-lock.yml
+[0m19:01:26.262363 [debug] [MainThread]: Set downloads directory='C:\Users\chuck\AppData\Local\Temp\dbt-downloads-ameskxoa'
+[0m19:01:26.264018 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m19:01:26.926918 [info ] [MainThread]: Installed from version 1.4.1
+[0m19:01:26.927427 [info ] [MainThread]: Up to date!
+[0m19:01:26.928566 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'a7bff8fc-79f7-4640-af77-db42313067e7', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020122779550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020120230EC0>]}
+[0m19:01:26.929527 [info ] [MainThread]: Installing metaplane/dbt_expectations
+[0m19:01:27.598615 [info ] [MainThread]: Installed from version 0.10.10
+[0m19:01:27.598615 [info ] [MainThread]: Up to date!
+[0m19:01:27.598615 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'a7bff8fc-79f7-4640-af77-db42313067e7', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201202C3CE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020120A51040>]}
+[0m19:01:27.603827 [info ] [MainThread]: Installing godatadriven/dbt_date
+[0m19:01:28.064019 [info ] [MainThread]: Installed from version 0.19.0
+[0m19:01:28.064019 [info ] [MainThread]: Up to date!
+[0m19:01:28.064019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'a7bff8fc-79f7-4640-af77-db42313067e7', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201228333E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020120A51040>]}
+[0m19:01:28.064019 [debug] [MainThread]: Command `dbt deps` succeeded at 19:01:28.064019 after 2.81 seconds
+[0m19:01:28.064019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020120976ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201206259A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201206248F0>]}
+[0m19:01:28.064019 [debug] [MainThread]: Flushing usage events
+[0m19:01:29.365024 [debug] [MainThread]: An error was encountered while trying to flush usage events
