@@ -1,0 +1,53 @@
+version: 2
+
+sources:
+  - name: landing
+    database: '{{ target.catalog }}'
+    schema: dbt_landing  
+    tables:
+      - name: orders
+        columns:
+          - name: id
+            data_tests:
+              - unique:
+                 config:
+                  severity: warn
+              - not_null:
+                 config:
+                  severity: warn
+          - name: quantity
+            data_tests:
+              - assert_non_negative
+          - name: unit_price
+            data_tests:
+              - assert_non_negative
+      - name: products
+        columns:
+          - name: id
+            data_tests:
+              - unique:
+                 config:
+                  severity: warn
+              - not_null:
+                 config:
+                  severity: warn
+      - name: reviews
+        columns:
+          - name: id
+            data_tests:
+              - unique:
+                 config:
+                  severity: warn
+              - not_null:
+                 config:
+                  severity: warn
+      - name: users
+        columns:
+          - name: id
+            data_tests:
+              - unique:
+                 config:
+                  severity: warn
+              - not_null:
+                 config:
+                  severity: warn
