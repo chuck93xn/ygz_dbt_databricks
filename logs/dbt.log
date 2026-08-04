@@ -1208,3 +1208,79 @@ KeyboardInterrupt
 [0m19:01:28.064019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020120976ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201206259A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000201206248F0>]}
 [0m19:01:28.064019 [debug] [MainThread]: Flushing usage events
 [0m19:01:29.365024 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:15:55.736972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D907D20DA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D9081E6B40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D90A50F560>]}
+
+
+============================== 19:15:55.740964 | c9b8b67d-57c3-4e5d-a0e7-26ab7f7f77d8 ==============================
+[0m19:15:55.740964 [info ] [MainThread]: Running with dbt=1.12.0
+[0m19:15:55.741924 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\chuck\\Learning\\DBT_Azure_Databricks\\ygz_dbt_databricks', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt compile', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\chuck\\Learning\\DBT_Azure_Databricks\\ygz_dbt_databricks\\logs'}
+[0m19:15:56.643242 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m19:15:56.643242 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m19:15:56.643242 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m19:15:57.813907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'c9b8b67d-57c3-4e5d-a0e7-26ab7f7f77d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D926C6E9F0>]}
+[0m19:15:57.845900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'c9b8b67d-57c3-4e5d-a0e7-26ab7f7f77d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D92816DAF0>]}
+[0m19:15:57.861823 [info ] [MainThread]: Registered adapter: databricks=1.12.3
+[0m19:15:58.498456 [debug] [MainThread]: checksum: bb5a7be7380b4bc8cfc970cd46992b6be61a6e35a0044e4bfabddd53d2ea5cb0, vars: {}, profile: ygz_dbt_databricks, target: dev, version: 1.12.0
+[0m19:15:58.605272 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+[0m19:15:58.605272 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m19:15:58.605272 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'c9b8b67d-57c3-4e5d-a0e7-26ab7f7f77d8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D90AA50AA0>]}
+[0m19:16:08.152657 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'bronze_orders' in the 'models' section of file 'models\bronze\_bronze.yml'
+[0m19:16:08.247614 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test
+`dbt_expectations.expect_table_columns_to_match_set` defined on
+'gold_sales__daily' in package 'ygz_dbt_databricks' (models\gold\_gold.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m19:16:08.247614 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'c9b8b67d-57c3-4e5d-a0e7-26ab7f7f77d8', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D928A0CAD0>]}
+[0m19:16:08.410360 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error
+  Model 'model.ygz_dbt_databricks.gold_sales__daily' (models\gold\gold_sales__daily.sql) depends on a node named 'silver_users' which was not found
+[0m19:16:08.411251 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m19:16:08.411685 [debug] [MainThread]: Command `dbt compile` failed at 19:16:08.411685 after 12.99 seconds
+[0m19:16:08.412801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D927D0C140>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D928BD7530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002D928DE0530>]}
+[0m19:16:08.412801 [debug] [MainThread]: Flushing usage events
+[0m19:16:09.768087 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:16:38.567725 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023390AF10A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233932EC470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233936B2000>]}
+
+
+============================== 19:16:38.570742 | 997114af-f7cb-49a4-8f56-c78ccc5707b7 ==============================
+[0m19:16:38.570742 [info ] [MainThread]: Running with dbt=1.12.0
+[0m19:16:38.571748 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\chuck\\Learning\\DBT_Azure_Databricks\\ygz_dbt_databricks', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt compile --select date_spine', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\chuck\\Learning\\DBT_Azure_Databricks\\ygz_dbt_databricks\\logs'}
+[0m19:16:39.328827 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m19:16:39.329813 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m19:16:39.330190 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m19:16:40.100967 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '997114af-f7cb-49a4-8f56-c78ccc5707b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233B1024320>]}
+[0m19:16:40.146973 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '997114af-f7cb-49a4-8f56-c78ccc5707b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233972878C0>]}
+[0m19:16:40.147997 [info ] [MainThread]: Registered adapter: databricks=1.12.3
+[0m19:16:40.373686 [debug] [MainThread]: checksum: bb5a7be7380b4bc8cfc970cd46992b6be61a6e35a0044e4bfabddd53d2ea5cb0, vars: {}, profile: ygz_dbt_databricks, target: dev, version: 1.12.0
+[0m19:16:40.442621 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+[0m19:16:40.442621 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m19:16:40.443659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '997114af-f7cb-49a4-8f56-c78ccc5707b7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233938349E0>]}
+[0m19:16:42.339423 [warn ] [MainThread]: [[33mWARNING[0m]: Did not find matching node for patch with name 'bronze_orders' in the 'models' section of file 'models\bronze\_bronze.yml'
+[0m19:16:42.430738 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test
+`dbt_expectations.expect_table_columns_to_match_set` defined on
+'gold_sales__daily' in package 'ygz_dbt_databricks' (models\gold\_gold.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m19:16:42.430738 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '997114af-f7cb-49a4-8f56-c78ccc5707b7', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233B1649E50>]}
+[0m19:16:42.588152 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error
+  Model 'model.ygz_dbt_databricks.gold_sales__daily' (models\gold\gold_sales__daily.sql) depends on a node named 'silver_users' which was not found
+[0m19:16:42.589153 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m19:16:42.590083 [debug] [MainThread]: Command `dbt compile` failed at 19:16:42.590083 after 4.16 seconds
+[0m19:16:42.590083 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233934AE7E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000233B0A9C710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023397287D40>]}
+[0m19:16:42.590083 [debug] [MainThread]: Flushing usage events
+[0m19:16:43.887107 [debug] [MainThread]: An error was encountered while trying to flush usage events
