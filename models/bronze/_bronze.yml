@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: bronze_products
+    columns:
+      - name: category
+        data_tests:
+          - accepted_values:
+              arguments: 
+                values: ["Doohickey", "Widget", "Gizmo", "Gadget"]
+      - name: id
+        data_tests:
+          - unique
+          - not_null
+
+  - name: bronze_orders
+    columns:
+      - name: product_id
+        data_tests:
+          - relationships:
+              arguments: 
+                to: ref('bronze_products')
+                field: id

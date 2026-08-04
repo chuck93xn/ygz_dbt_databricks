@@ -196,3 +196,968 @@ Happy modeling!
 [0m00:07:23.278589 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219F83F56A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021994C837A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000219F85BF1D0>]}
 [0m00:07:23.278589 [debug] [MainThread]: Flushing usage events
 [0m00:07:24.616449 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:34:36.128469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238EA7A2C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238E826B200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238E8203B90>]}
+
+
+============================== 20:34:36.144505 | bbc90d2d-e456-4376-b7a3-84fc0e1ebdc8 ==============================
+[0m20:34:36.144505 [info ] [MainThread]: Running with dbt=1.12.0
+[0m20:34:36.144505 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\chuck\\Learning\\DBT_Azure_Databricks\\ygz_dbt_databricks', 'invocation_command': 'dbt test', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\chuck\\Learning\\DBT_Azure_Databricks\\ygz_dbt_databricks\\logs'}
+[0m20:34:42.152243 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m20:34:42.152243 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m20:34:42.152243 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m20:34:47.433181 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bbc90d2d-e456-4376-b7a3-84fc0e1ebdc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023888927440>]}
+[0m20:34:47.512601 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bbc90d2d-e456-4376-b7a3-84fc0e1ebdc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023886E5C9B0>]}
+[0m20:34:47.513604 [info ] [MainThread]: Registered adapter: databricks=1.12.3
+[0m20:34:48.691195 [debug] [MainThread]: checksum: bb5a7be7380b4bc8cfc970cd46992b6be61a6e35a0044e4bfabddd53d2ea5cb0, vars: {}, profile: ygz_dbt_databricks, target: dev, version: 1.12.0
+[0m20:34:48.694298 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m20:34:48.695288 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'bbc90d2d-e456-4376-b7a3-84fc0e1ebdc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023888AE9A00>]}
+[0m20:34:55.852651 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bbc90d2d-e456-4376-b7a3-84fc0e1ebdc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023888B40920>]}
+[0m20:34:55.975778 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\target\manifest.json
+[0m20:34:55.994489 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\target\semantic_manifest.json
+[0m20:34:56.041991 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\target\osi_document.json
+[0m20:34:56.095274 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bbc90d2d-e456-4376-b7a3-84fc0e1ebdc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002388943E630>]}
+[0m20:34:56.096337 [info ] [MainThread]: Found 2 models, 4 data tests, 773 macros
+[0m20:34:56.096337 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bbc90d2d-e456-4376-b7a3-84fc0e1ebdc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023889379250>]}
+[0m20:34:56.099309 [info ] [MainThread]: 
+[0m20:34:56.100307 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:34:56.100307 [info ] [MainThread]: 
+[0m20:34:56.101479 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m20:34:56.101479 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m20:34:56.108731 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_dbt_ygz_project_default) - Creating connection
+[0m20:34:56.110240 [debug] [ThreadPool]: Acquiring new databricks connection 'list_dbt_ygz_project_default'
+[0m20:34:56.122756 [debug] [ThreadPool]: Using databricks connection "list_dbt_ygz_project_default"
+[0m20:34:56.123756 [debug] [ThreadPool]: On list_dbt_ygz_project_default: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "ygz_dbt_databricks", "target_name": "dev", "invocation_id": "bbc90d2d-e456-4376-b7a3-84fc0e1ebdc8", "connection_name": "list_dbt_ygz_project_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'dbt_ygz_project'
+  AND table_schema = 'default'
+
+  
+[0m20:34:56.123756 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:34:59.620431 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f18f26-f9ce-12d2-baf4-d705e9864be6) - Created
+[0m20:35:07.525074 [debug] [ThreadPool]: SQL status: OK in 11.400 seconds
+[0m20:35:07.560827 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f18f26-f9ce-12d2-baf4-d705e9864be6, command-id=01f18f26-fa5a-149d-8e53-d4c61caa2112) - Closing
+[0m20:35:07.795418 [debug] [ThreadPool]: On list_dbt_ygz_project_default: Close
+[0m20:35:07.796420 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f18f26-f9ce-12d2-baf4-d705e9864be6) - Closing
+[0m20:35:08.000628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bbc90d2d-e456-4376-b7a3-84fc0e1ebdc8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002388940C740>]}
+[0m20:35:08.034710 [debug] [Thread-2 (]: Began running node test.ygz_dbt_databricks.not_null_my_first_dbt_model_id.5fb22c2710
+[0m20:35:08.035719 [info ] [Thread-2 (]: 1 of 4 START test not_null_my_first_dbt_model_id ............................... [RUN]
+[0m20:35:08.036693 [debug] [Thread-2 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.ygz_dbt_databricks.not_null_my_first_dbt_model_id.5fb22c2710) - Creating connection
+[0m20:35:08.037668 [debug] [Thread-2 (]: Acquiring new databricks connection 'test.ygz_dbt_databricks.not_null_my_first_dbt_model_id.5fb22c2710'
+[0m20:35:08.037668 [debug] [Thread-2 (]: Began compiling node test.ygz_dbt_databricks.not_null_my_first_dbt_model_id.5fb22c2710
+[0m20:35:08.063615 [debug] [Thread-2 (]: Writing injected SQL for node "test.ygz_dbt_databricks.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m20:35:08.068125 [debug] [Thread-2 (]: Began executing node test.ygz_dbt_databricks.not_null_my_first_dbt_model_id.5fb22c2710
+[0m20:35:08.088826 [debug] [Thread-2 (]: Writing runtime sql for node "test.ygz_dbt_databricks.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m20:35:08.092701 [debug] [Thread-2 (]: Using databricks connection "test.ygz_dbt_databricks.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m20:35:08.093247 [debug] [Thread-2 (]: On test.ygz_dbt_databricks.not_null_my_first_dbt_model_id.5fb22c2710: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "ygz_dbt_databricks", "target_name": "dev", "invocation_id": "bbc90d2d-e456-4376-b7a3-84fc0e1ebdc8", "node_id": "test.ygz_dbt_databricks.not_null_my_first_dbt_model_id.5fb22c2710"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id
+from `dbt_ygz_project`.`default`.`my_first_dbt_model`
+where id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:35:08.093834 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:35:08.785626 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f18f26-ffaf-1b65-834b-5ee81f56d9dc) - Created
+[0m20:35:09.431000 [debug] [Thread-2 (]: Databricks adapter: Exception while trying to execute query
+/* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "ygz_dbt_databricks", "target_name": "dev", "invocation_id": "bbc90d2d-e456-4376-b7a3-84fc0e1ebdc8", "node_id": "test.ygz_dbt_databricks.not_null_my_first_dbt_model_id.5fb22c2710"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id
+from `dbt_ygz_project`.`default`.`my_first_dbt_model`
+where id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+: [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_first_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 18 pos 5
+Error properties: diagnostic-info=org.apache.hive.service.cli.HiveSQLException: Error running query: [TABLE_OR_VIEW_NOT_FOUND] org.apache.spark.sql.catalyst.ExtendedAnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_first_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 18 pos 5
+	at org.apache.spark.sql.hive.thriftserver.HiveThriftServerErrors$.runningQueryError(HiveThriftServerErrors.scala:58)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:1205)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.unity.UCSEphemeralState$Handle.runWith(UCSEphemeralState.scala:51)
+	at com.databricks.unity.HandleImpl.runWith(UCSHandle.scala:128)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:898)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$6(SparkExecuteStatementOperation.scala:647)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.apache.spark.sql.execution.SQLExecution$.withRootExecution(SQLExecution.scala:1538)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$3(SparkExecuteStatementOperation.scala:647)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.util.TracingSpanUtils$.withTracing(TracingSpanUtils.scala:251)
+	at com.databricks.spark.util.DatabricksTracingHelper.withSpan(DatabricksSparkTracingHelper.scala:154)
+	at com.databricks.spark.util.DBRTracing$.withSpan(DBRTracing.scala:87)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.$anonfun$withLocalProperties$18(ThriftLocalProperties.scala:366)
+	at com.databricks.logging.AttributionContextTracing.$anonfun$withAttributionContext$1(AttributionContextTracing.scala:146)
+	at com.databricks.logging.AttributionContext$.$anonfun$withValue$1(AttributionContext.scala:349)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:59)
+	at com.databricks.logging.AttributionContext$.withValue(AttributionContext.scala:345)
+	at com.databricks.logging.AttributionContextTracing.withAttributionContext(AttributionContextTracing.scala:144)
+	at com.databricks.logging.AttributionContextTracing.withAttributionContext$(AttributionContextTracing.scala:141)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionContext(DatabricksSparkUsageLogger.scala:29)
+	at com.databricks.logging.AttributionContextTracing.withAttributionTags(AttributionContextTracing.scala:201)
+	at com.databricks.logging.AttributionContextTracing.withAttributionTags$(AttributionContextTracing.scala:182)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionTags(DatabricksSparkUsageLogger.scala:29)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionTags0(DatabricksSparkUsageLogger.scala:108)
+	at com.databricks.spark.util.DatabricksSparkUsageLogger.withAttributionTags(DatabricksSparkUsageLogger.scala:215)
+	at com.databricks.spark.util.UsageLogging.$anonfun$withAttributionTags$1(UsageLogger.scala:668)
+	at com.databricks.spark.util.UsageLogging$.withAttributionTags(UsageLogger.scala:780)
+	at com.databricks.spark.util.UsageLogging$.withAttributionTags(UsageLogger.scala:789)
+	at com.databricks.spark.util.UsageLogging.withAttributionTags(UsageLogger.scala:668)
+	at com.databricks.spark.util.UsageLogging.withAttributionTags$(UsageLogger.scala:666)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withAttributionTags(SparkExecuteStatementOperation.scala:79)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.$anonfun$withLocalProperties$15(ThriftLocalProperties.scala:365)
+	at com.databricks.spark.util.IdentityClaim$.withClaim(IdentityClaim.scala:48)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:360)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:180)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:79)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:623)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.spark.util.DBRTracing$.withSpanFromParent(DBRTracing.scala:70)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:623)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:596)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1953)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:661)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.apache.spark.sql.catalyst.ExtendedAnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_first_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 18 pos 5
+	at org.apache.spark.sql.catalyst.ExtendedAnalysisException.copyPlan(ExtendedAnalysisException.scala:97)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:1158)
+	... 50 more
+, operation-id=01f18f26-ffd0-1271-83a5-3632af92a788
+[0m20:35:09.432122 [debug] [Thread-2 (]: On test.ygz_dbt_databricks.not_null_my_first_dbt_model_id.5fb22c2710: Close
+[0m20:35:09.433113 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f18f26-ffaf-1b65-834b-5ee81f56d9dc) - Closing
+[0m20:35:09.777820 [debug] [Thread-2 (]: Database Error in test not_null_my_first_dbt_model_id (models\example\schema.yml)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_first_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 18 pos 5
+  compiled code at target\run\ygz_dbt_databricks\models\example\schema.yml\not_null_my_first_dbt_model_id.sql
+[0m20:35:09.778827 [error] [Thread-2 (]: 1 of 4 ERROR not_null_my_first_dbt_model_id .................................... [[31mERROR[0m in 1.74s]
+[0m20:35:09.778827 [debug] [Thread-2 (]: Finished running node test.ygz_dbt_databricks.not_null_my_first_dbt_model_id.5fb22c2710
+[0m20:35:09.780332 [debug] [Thread-2 (]: Began running node test.ygz_dbt_databricks.not_null_my_second_dbt_model_id.151b76d778
+[0m20:35:09.781474 [debug] [Thread-5 (]: Marking all children of 'test.ygz_dbt_databricks.not_null_my_first_dbt_model_id.5fb22c2710' to be skipped because of status 'error'.  Reason: Database Error in test not_null_my_first_dbt_model_id (models\example\schema.yml)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_first_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 18 pos 5
+  compiled code at target\run\ygz_dbt_databricks\models\example\schema.yml\not_null_my_first_dbt_model_id.sql.
+[0m20:35:09.780332 [info ] [Thread-2 (]: 2 of 4 START test not_null_my_second_dbt_model_id .............................. [RUN]
+[0m20:35:09.783384 [debug] [Thread-2 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.ygz_dbt_databricks.not_null_my_second_dbt_model_id.151b76d778) - Creating connection
+[0m20:35:09.783384 [debug] [Thread-2 (]: Acquiring new databricks connection 'test.ygz_dbt_databricks.not_null_my_second_dbt_model_id.151b76d778'
+[0m20:35:09.783384 [debug] [Thread-2 (]: Began compiling node test.ygz_dbt_databricks.not_null_my_second_dbt_model_id.151b76d778
+[0m20:35:09.794345 [debug] [Thread-2 (]: Writing injected SQL for node "test.ygz_dbt_databricks.not_null_my_second_dbt_model_id.151b76d778"
+[0m20:35:09.797591 [debug] [Thread-2 (]: Began executing node test.ygz_dbt_databricks.not_null_my_second_dbt_model_id.151b76d778
+[0m20:35:09.799254 [debug] [Thread-2 (]: Writing runtime sql for node "test.ygz_dbt_databricks.not_null_my_second_dbt_model_id.151b76d778"
+[0m20:35:09.801771 [debug] [Thread-2 (]: Using databricks connection "test.ygz_dbt_databricks.not_null_my_second_dbt_model_id.151b76d778"
+[0m20:35:09.802864 [debug] [Thread-2 (]: On test.ygz_dbt_databricks.not_null_my_second_dbt_model_id.151b76d778: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "ygz_dbt_databricks", "target_name": "dev", "invocation_id": "bbc90d2d-e456-4376-b7a3-84fc0e1ebdc8", "node_id": "test.ygz_dbt_databricks.not_null_my_second_dbt_model_id.151b76d778"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id
+from `dbt_ygz_project`.`default`.`my_second_dbt_model`
+where id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:35:09.803846 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:35:10.476253 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f18f27-00b3-1e1b-9cee-d00e43f636c8) - Created
+[0m20:35:10.919148 [debug] [Thread-2 (]: Databricks adapter: Exception while trying to execute query
+/* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "ygz_dbt_databricks", "target_name": "dev", "invocation_id": "bbc90d2d-e456-4376-b7a3-84fc0e1ebdc8", "node_id": "test.ygz_dbt_databricks.not_null_my_second_dbt_model_id.151b76d778"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select id
+from `dbt_ygz_project`.`default`.`my_second_dbt_model`
+where id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+: [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_second_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 18 pos 5
+Error properties: diagnostic-info=org.apache.hive.service.cli.HiveSQLException: Error running query: [TABLE_OR_VIEW_NOT_FOUND] org.apache.spark.sql.catalyst.ExtendedAnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_second_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 18 pos 5
+	at org.apache.spark.sql.hive.thriftserver.HiveThriftServerErrors$.runningQueryError(HiveThriftServerErrors.scala:58)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:1205)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.unity.UCSEphemeralState$Handle.runWith(UCSEphemeralState.scala:51)
+	at com.databricks.unity.HandleImpl.runWith(UCSHandle.scala:128)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:898)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$6(SparkExecuteStatementOperation.scala:647)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.apache.spark.sql.execution.SQLExecution$.withRootExecution(SQLExecution.scala:1538)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$3(SparkExecuteStatementOperation.scala:647)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.util.TracingSpanUtils$.withTracing(TracingSpanUtils.scala:251)
+	at com.databricks.spark.util.DatabricksTracingHelper.withSpan(DatabricksSparkTracingHelper.scala:154)
+	at com.databricks.spark.util.DBRTracing$.withSpan(DBRTracing.scala:87)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.$anonfun$withLocalProperties$18(ThriftLocalProperties.scala:366)
+	at com.databricks.logging.AttributionContextTracing.$anonfun$withAttributionContext$1(AttributionContextTracing.scala:146)
+	at com.databricks.logging.AttributionContext$.$anonfun$withValue$1(AttributionContext.scala:349)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:59)
+	at com.databricks.logging.AttributionContext$.withValue(AttributionContext.scala:345)
+	at com.databricks.logging.AttributionContextTracing.withAttributionContext(AttributionContextTracing.scala:144)
+	at com.databricks.logging.AttributionContextTracing.withAttributionContext$(AttributionContextTracing.scala:141)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionContext(DatabricksSparkUsageLogger.scala:29)
+	at com.databricks.logging.AttributionContextTracing.withAttributionTags(AttributionContextTracing.scala:201)
+	at com.databricks.logging.AttributionContextTracing.withAttributionTags$(AttributionContextTracing.scala:182)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionTags(DatabricksSparkUsageLogger.scala:29)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionTags0(DatabricksSparkUsageLogger.scala:108)
+	at com.databricks.spark.util.DatabricksSparkUsageLogger.withAttributionTags(DatabricksSparkUsageLogger.scala:215)
+	at com.databricks.spark.util.UsageLogging.$anonfun$withAttributionTags$1(UsageLogger.scala:668)
+	at com.databricks.spark.util.UsageLogging$.withAttributionTags(UsageLogger.scala:780)
+	at com.databricks.spark.util.UsageLogging$.withAttributionTags(UsageLogger.scala:789)
+	at com.databricks.spark.util.UsageLogging.withAttributionTags(UsageLogger.scala:668)
+	at com.databricks.spark.util.UsageLogging.withAttributionTags$(UsageLogger.scala:666)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withAttributionTags(SparkExecuteStatementOperation.scala:79)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.$anonfun$withLocalProperties$15(ThriftLocalProperties.scala:365)
+	at com.databricks.spark.util.IdentityClaim$.withClaim(IdentityClaim.scala:48)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:360)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:180)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:79)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:623)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.spark.util.DBRTracing$.withSpanFromParent(DBRTracing.scala:70)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:623)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:596)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1953)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:661)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.apache.spark.sql.catalyst.ExtendedAnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_second_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 18 pos 5
+	at org.apache.spark.sql.catalyst.ExtendedAnalysisException.copyPlan(ExtendedAnalysisException.scala:97)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:1158)
+	... 50 more
+, operation-id=01f18f27-00d2-14da-90f4-ff3f55387b32
+[0m20:35:10.920758 [debug] [Thread-2 (]: On test.ygz_dbt_databricks.not_null_my_second_dbt_model_id.151b76d778: Close
+[0m20:35:10.920758 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f18f27-00b3-1e1b-9cee-d00e43f636c8) - Closing
+[0m20:35:11.124864 [debug] [Thread-2 (]: Database Error in test not_null_my_second_dbt_model_id (models\example\schema.yml)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_second_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 18 pos 5
+  compiled code at target\run\ygz_dbt_databricks\models\example\schema.yml\not_null_my_second_dbt_model_id.sql
+[0m20:35:11.126870 [error] [Thread-2 (]: 2 of 4 ERROR not_null_my_second_dbt_model_id ................................... [[31mERROR[0m in 1.34s]
+[0m20:35:11.127829 [debug] [Thread-2 (]: Finished running node test.ygz_dbt_databricks.not_null_my_second_dbt_model_id.151b76d778
+[0m20:35:11.128863 [debug] [Thread-2 (]: Began running node test.ygz_dbt_databricks.unique_my_first_dbt_model_id.16e066b321
+[0m20:35:11.128863 [debug] [Thread-5 (]: Marking all children of 'test.ygz_dbt_databricks.not_null_my_second_dbt_model_id.151b76d778' to be skipped because of status 'error'.  Reason: Database Error in test not_null_my_second_dbt_model_id (models\example\schema.yml)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_second_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 18 pos 5
+  compiled code at target\run\ygz_dbt_databricks\models\example\schema.yml\not_null_my_second_dbt_model_id.sql.
+[0m20:35:11.128863 [info ] [Thread-2 (]: 3 of 4 START test unique_my_first_dbt_model_id ................................. [RUN]
+[0m20:35:11.130416 [debug] [Thread-2 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.ygz_dbt_databricks.unique_my_first_dbt_model_id.16e066b321) - Creating connection
+[0m20:35:11.130416 [debug] [Thread-2 (]: Acquiring new databricks connection 'test.ygz_dbt_databricks.unique_my_first_dbt_model_id.16e066b321'
+[0m20:35:11.130416 [debug] [Thread-2 (]: Began compiling node test.ygz_dbt_databricks.unique_my_first_dbt_model_id.16e066b321
+[0m20:35:11.137524 [debug] [Thread-2 (]: Writing injected SQL for node "test.ygz_dbt_databricks.unique_my_first_dbt_model_id.16e066b321"
+[0m20:35:11.138885 [debug] [Thread-2 (]: Began executing node test.ygz_dbt_databricks.unique_my_first_dbt_model_id.16e066b321
+[0m20:35:11.141597 [debug] [Thread-2 (]: Writing runtime sql for node "test.ygz_dbt_databricks.unique_my_first_dbt_model_id.16e066b321"
+[0m20:35:11.142603 [debug] [Thread-2 (]: Using databricks connection "test.ygz_dbt_databricks.unique_my_first_dbt_model_id.16e066b321"
+[0m20:35:11.143675 [debug] [Thread-2 (]: On test.ygz_dbt_databricks.unique_my_first_dbt_model_id.16e066b321: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "ygz_dbt_databricks", "target_name": "dev", "invocation_id": "bbc90d2d-e456-4376-b7a3-84fc0e1ebdc8", "node_id": "test.ygz_dbt_databricks.unique_my_first_dbt_model_id.16e066b321"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from `dbt_ygz_project`.`default`.`my_first_dbt_model`
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:35:11.143675 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:35:11.834286 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f18f27-0183-17f8-b8c4-c1aa5a0a67f4) - Created
+[0m20:35:12.272702 [debug] [Thread-2 (]: Databricks adapter: Exception while trying to execute query
+/* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "ygz_dbt_databricks", "target_name": "dev", "invocation_id": "bbc90d2d-e456-4376-b7a3-84fc0e1ebdc8", "node_id": "test.ygz_dbt_databricks.unique_my_first_dbt_model_id.16e066b321"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from `dbt_ygz_project`.`default`.`my_first_dbt_model`
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+: [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_first_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 19 pos 5
+Error properties: diagnostic-info=org.apache.hive.service.cli.HiveSQLException: Error running query: [TABLE_OR_VIEW_NOT_FOUND] org.apache.spark.sql.catalyst.ExtendedAnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_first_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 19 pos 5
+	at org.apache.spark.sql.hive.thriftserver.HiveThriftServerErrors$.runningQueryError(HiveThriftServerErrors.scala:58)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:1205)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.unity.UCSEphemeralState$Handle.runWith(UCSEphemeralState.scala:51)
+	at com.databricks.unity.HandleImpl.runWith(UCSHandle.scala:128)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:898)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$6(SparkExecuteStatementOperation.scala:647)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.apache.spark.sql.execution.SQLExecution$.withRootExecution(SQLExecution.scala:1538)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$3(SparkExecuteStatementOperation.scala:647)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.util.TracingSpanUtils$.withTracing(TracingSpanUtils.scala:251)
+	at com.databricks.spark.util.DatabricksTracingHelper.withSpan(DatabricksSparkTracingHelper.scala:154)
+	at com.databricks.spark.util.DBRTracing$.withSpan(DBRTracing.scala:87)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.$anonfun$withLocalProperties$18(ThriftLocalProperties.scala:366)
+	at com.databricks.logging.AttributionContextTracing.$anonfun$withAttributionContext$1(AttributionContextTracing.scala:146)
+	at com.databricks.logging.AttributionContext$.$anonfun$withValue$1(AttributionContext.scala:349)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:59)
+	at com.databricks.logging.AttributionContext$.withValue(AttributionContext.scala:345)
+	at com.databricks.logging.AttributionContextTracing.withAttributionContext(AttributionContextTracing.scala:144)
+	at com.databricks.logging.AttributionContextTracing.withAttributionContext$(AttributionContextTracing.scala:141)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionContext(DatabricksSparkUsageLogger.scala:29)
+	at com.databricks.logging.AttributionContextTracing.withAttributionTags(AttributionContextTracing.scala:201)
+	at com.databricks.logging.AttributionContextTracing.withAttributionTags$(AttributionContextTracing.scala:182)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionTags(DatabricksSparkUsageLogger.scala:29)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionTags0(DatabricksSparkUsageLogger.scala:108)
+	at com.databricks.spark.util.DatabricksSparkUsageLogger.withAttributionTags(DatabricksSparkUsageLogger.scala:215)
+	at com.databricks.spark.util.UsageLogging.$anonfun$withAttributionTags$1(UsageLogger.scala:668)
+	at com.databricks.spark.util.UsageLogging$.withAttributionTags(UsageLogger.scala:780)
+	at com.databricks.spark.util.UsageLogging$.withAttributionTags(UsageLogger.scala:789)
+	at com.databricks.spark.util.UsageLogging.withAttributionTags(UsageLogger.scala:668)
+	at com.databricks.spark.util.UsageLogging.withAttributionTags$(UsageLogger.scala:666)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withAttributionTags(SparkExecuteStatementOperation.scala:79)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.$anonfun$withLocalProperties$15(ThriftLocalProperties.scala:365)
+	at com.databricks.spark.util.IdentityClaim$.withClaim(IdentityClaim.scala:48)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:360)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:180)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:79)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:623)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.spark.util.DBRTracing$.withSpanFromParent(DBRTracing.scala:70)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:623)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:596)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1953)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:661)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.apache.spark.sql.catalyst.ExtendedAnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_first_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 19 pos 5
+	at org.apache.spark.sql.catalyst.ExtendedAnalysisException.copyPlan(ExtendedAnalysisException.scala:97)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:1158)
+	... 50 more
+, operation-id=01f18f27-01a1-1a40-bb61-4d76be9e8757
+[0m20:35:12.273713 [debug] [Thread-2 (]: On test.ygz_dbt_databricks.unique_my_first_dbt_model_id.16e066b321: Close
+[0m20:35:12.274701 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f18f27-0183-17f8-b8c4-c1aa5a0a67f4) - Closing
+[0m20:35:12.478964 [debug] [Thread-2 (]: Database Error in test unique_my_first_dbt_model_id (models\example\schema.yml)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_first_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 19 pos 5
+  compiled code at target\run\ygz_dbt_databricks\models\example\schema.yml\unique_my_first_dbt_model_id.sql
+[0m20:35:12.479690 [error] [Thread-2 (]: 3 of 4 ERROR unique_my_first_dbt_model_id ...................................... [[31mERROR[0m in 1.35s]
+[0m20:35:12.480761 [debug] [Thread-2 (]: Finished running node test.ygz_dbt_databricks.unique_my_first_dbt_model_id.16e066b321
+[0m20:35:12.480761 [debug] [Thread-2 (]: Began running node test.ygz_dbt_databricks.unique_my_second_dbt_model_id.57a0f8c493
+[0m20:35:12.481769 [debug] [Thread-5 (]: Marking all children of 'test.ygz_dbt_databricks.unique_my_first_dbt_model_id.16e066b321' to be skipped because of status 'error'.  Reason: Database Error in test unique_my_first_dbt_model_id (models\example\schema.yml)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_first_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 19 pos 5
+  compiled code at target\run\ygz_dbt_databricks\models\example\schema.yml\unique_my_first_dbt_model_id.sql.
+[0m20:35:12.481769 [info ] [Thread-2 (]: 4 of 4 START test unique_my_second_dbt_model_id ................................ [RUN]
+[0m20:35:12.482886 [debug] [Thread-2 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.ygz_dbt_databricks.unique_my_second_dbt_model_id.57a0f8c493) - Creating connection
+[0m20:35:12.483883 [debug] [Thread-2 (]: Acquiring new databricks connection 'test.ygz_dbt_databricks.unique_my_second_dbt_model_id.57a0f8c493'
+[0m20:35:12.483883 [debug] [Thread-2 (]: Began compiling node test.ygz_dbt_databricks.unique_my_second_dbt_model_id.57a0f8c493
+[0m20:35:12.490793 [debug] [Thread-2 (]: Writing injected SQL for node "test.ygz_dbt_databricks.unique_my_second_dbt_model_id.57a0f8c493"
+[0m20:35:12.491806 [debug] [Thread-2 (]: Began executing node test.ygz_dbt_databricks.unique_my_second_dbt_model_id.57a0f8c493
+[0m20:35:12.493909 [debug] [Thread-2 (]: Writing runtime sql for node "test.ygz_dbt_databricks.unique_my_second_dbt_model_id.57a0f8c493"
+[0m20:35:12.495805 [debug] [Thread-2 (]: Using databricks connection "test.ygz_dbt_databricks.unique_my_second_dbt_model_id.57a0f8c493"
+[0m20:35:12.496800 [debug] [Thread-2 (]: On test.ygz_dbt_databricks.unique_my_second_dbt_model_id.57a0f8c493: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "ygz_dbt_databricks", "target_name": "dev", "invocation_id": "bbc90d2d-e456-4376-b7a3-84fc0e1ebdc8", "node_id": "test.ygz_dbt_databricks.unique_my_second_dbt_model_id.57a0f8c493"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from `dbt_ygz_project`.`default`.`my_second_dbt_model`
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m20:35:12.496800 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:35:13.165889 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f18f27-0250-148e-ad41-70d706a5b186) - Created
+[0m20:35:13.602646 [debug] [Thread-2 (]: Databricks adapter: Exception while trying to execute query
+/* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "ygz_dbt_databricks", "target_name": "dev", "invocation_id": "bbc90d2d-e456-4376-b7a3-84fc0e1ebdc8", "node_id": "test.ygz_dbt_databricks.unique_my_second_dbt_model_id.57a0f8c493"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+select
+    id as unique_field,
+    count(*) as n_records
+
+from `dbt_ygz_project`.`default`.`my_second_dbt_model`
+where id is not null
+group by id
+having count(*) > 1
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+: [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_second_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 19 pos 5
+Error properties: diagnostic-info=org.apache.hive.service.cli.HiveSQLException: Error running query: [TABLE_OR_VIEW_NOT_FOUND] org.apache.spark.sql.catalyst.ExtendedAnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_second_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 19 pos 5
+	at org.apache.spark.sql.hive.thriftserver.HiveThriftServerErrors$.runningQueryError(HiveThriftServerErrors.scala:58)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:1205)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.unity.UCSEphemeralState$Handle.runWith(UCSEphemeralState.scala:51)
+	at com.databricks.unity.HandleImpl.runWith(UCSHandle.scala:128)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.org$apache$spark$sql$hive$thriftserver$SparkExecuteStatementOperation$$execute(SparkExecuteStatementOperation.scala:898)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$6(SparkExecuteStatementOperation.scala:647)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at org.apache.spark.sql.execution.SQLExecution$.withRootExecution(SQLExecution.scala:1538)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$3(SparkExecuteStatementOperation.scala:647)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.util.TracingSpanUtils$.withTracing(TracingSpanUtils.scala:251)
+	at com.databricks.spark.util.DatabricksTracingHelper.withSpan(DatabricksSparkTracingHelper.scala:154)
+	at com.databricks.spark.util.DBRTracing$.withSpan(DBRTracing.scala:87)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.$anonfun$withLocalProperties$18(ThriftLocalProperties.scala:366)
+	at com.databricks.logging.AttributionContextTracing.$anonfun$withAttributionContext$1(AttributionContextTracing.scala:146)
+	at com.databricks.logging.AttributionContext$.$anonfun$withValue$1(AttributionContext.scala:349)
+	at scala.util.DynamicVariable.withValue(DynamicVariable.scala:59)
+	at com.databricks.logging.AttributionContext$.withValue(AttributionContext.scala:345)
+	at com.databricks.logging.AttributionContextTracing.withAttributionContext(AttributionContextTracing.scala:144)
+	at com.databricks.logging.AttributionContextTracing.withAttributionContext$(AttributionContextTracing.scala:141)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionContext(DatabricksSparkUsageLogger.scala:29)
+	at com.databricks.logging.AttributionContextTracing.withAttributionTags(AttributionContextTracing.scala:201)
+	at com.databricks.logging.AttributionContextTracing.withAttributionTags$(AttributionContextTracing.scala:182)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionTags(DatabricksSparkUsageLogger.scala:29)
+	at com.databricks.spark.util.PublicDBLogging.withAttributionTags0(DatabricksSparkUsageLogger.scala:108)
+	at com.databricks.spark.util.DatabricksSparkUsageLogger.withAttributionTags(DatabricksSparkUsageLogger.scala:215)
+	at com.databricks.spark.util.UsageLogging.$anonfun$withAttributionTags$1(UsageLogger.scala:668)
+	at com.databricks.spark.util.UsageLogging$.withAttributionTags(UsageLogger.scala:780)
+	at com.databricks.spark.util.UsageLogging$.withAttributionTags(UsageLogger.scala:789)
+	at com.databricks.spark.util.UsageLogging.withAttributionTags(UsageLogger.scala:668)
+	at com.databricks.spark.util.UsageLogging.withAttributionTags$(UsageLogger.scala:666)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withAttributionTags(SparkExecuteStatementOperation.scala:79)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.$anonfun$withLocalProperties$15(ThriftLocalProperties.scala:365)
+	at com.databricks.spark.util.IdentityClaim$.withClaim(IdentityClaim.scala:48)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties(ThriftLocalProperties.scala:360)
+	at org.apache.spark.sql.hive.thriftserver.ThriftLocalProperties.withLocalProperties$(ThriftLocalProperties.scala:180)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.withLocalProperties(SparkExecuteStatementOperation.scala:79)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.$anonfun$run$2(SparkExecuteStatementOperation.scala:623)
+	at scala.runtime.java8.JFunction0$mcV$sp.apply(JFunction0$mcV$sp.scala:18)
+	at com.databricks.spark.util.DBRTracing$.withSpanFromParent(DBRTracing.scala:70)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:623)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2$$anon$3.run(SparkExecuteStatementOperation.scala:596)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.base/javax.security.auth.Subject.doAs(Subject.java:439)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1953)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation$$anon$2.run(SparkExecuteStatementOperation.scala:661)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: org.apache.spark.sql.catalyst.ExtendedAnalysisException: [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_second_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 19 pos 5
+	at org.apache.spark.sql.catalyst.ExtendedAnalysisException.copyPlan(ExtendedAnalysisException.scala:97)
+	at org.apache.spark.sql.hive.thriftserver.SparkExecuteStatementOperation.$anonfun$execute$1(SparkExecuteStatementOperation.scala:1158)
+	... 50 more
+, operation-id=01f18f27-026c-1243-abd3-c3cf3d5f738a
+[0m20:35:13.603645 [debug] [Thread-2 (]: On test.ygz_dbt_databricks.unique_my_second_dbt_model_id.57a0f8c493: Close
+[0m20:35:13.603645 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f18f27-0250-148e-ad41-70d706a5b186) - Closing
+[0m20:35:13.789219 [debug] [Thread-2 (]: Database Error in test unique_my_second_dbt_model_id (models\example\schema.yml)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_second_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 19 pos 5
+  compiled code at target\run\ygz_dbt_databricks\models\example\schema.yml\unique_my_second_dbt_model_id.sql
+[0m20:35:13.790298 [error] [Thread-2 (]: 4 of 4 ERROR unique_my_second_dbt_model_id ..................................... [[31mERROR[0m in 1.31s]
+[0m20:35:13.790915 [debug] [Thread-2 (]: Finished running node test.ygz_dbt_databricks.unique_my_second_dbt_model_id.57a0f8c493
+[0m20:35:13.790915 [debug] [Thread-5 (]: Marking all children of 'test.ygz_dbt_databricks.unique_my_second_dbt_model_id.57a0f8c493' to be skipped because of status 'error'.  Reason: Database Error in test unique_my_second_dbt_model_id (models\example\schema.yml)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_second_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 19 pos 5
+  compiled code at target\run\ygz_dbt_databricks\models\example\schema.yml\unique_my_second_dbt_model_id.sql.
+[0m20:35:13.792540 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m20:35:13.794299 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m20:35:13.795309 [info ] [MainThread]: 
+[0m20:35:13.795309 [info ] [MainThread]: Finished running 4 data tests in 0 hours 0 minutes and 17.69 seconds (17.69s).
+[0m20:35:13.798309 [debug] [MainThread]: Command end result
+[0m20:35:13.857298 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\target\manifest.json
+[0m20:35:13.861007 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\target\semantic_manifest.json
+[0m20:35:13.866013 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\target\osi_document.json
+[0m20:35:13.874626 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\target\run_results.json
+[0m20:35:13.875627 [info ] [MainThread]: 
+[0m20:35:13.876628 [info ] [MainThread]: [31mCompleted with 4 errors, 0 partial successes, and 0 warnings:[0m
+[0m20:35:13.876628 [info ] [MainThread]: 
+[0m20:35:13.877627 [error] [MainThread]: [[31mERROR[0m]: in test not_null_my_first_dbt_model_id (models\example\schema.yml)
+[0m20:35:13.877627 [error] [MainThread]:   Database Error in test not_null_my_first_dbt_model_id (models\example\schema.yml)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_first_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 18 pos 5
+  compiled code at target\run\ygz_dbt_databricks\models\example\schema.yml\not_null_my_first_dbt_model_id.sql
+[0m20:35:13.878634 [info ] [MainThread]: 
+[0m20:35:13.878634 [info ] [MainThread]:   compiled code at target\compiled\ygz_dbt_databricks\models\example\schema.yml\not_null_my_first_dbt_model_id.sql
+[0m20:35:13.879632 [info ] [MainThread]: 
+[0m20:35:13.880634 [error] [MainThread]: [[31mERROR[0m]: in test not_null_my_second_dbt_model_id (models\example\schema.yml)
+[0m20:35:13.880634 [error] [MainThread]:   Database Error in test not_null_my_second_dbt_model_id (models\example\schema.yml)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_second_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 18 pos 5
+  compiled code at target\run\ygz_dbt_databricks\models\example\schema.yml\not_null_my_second_dbt_model_id.sql
+[0m20:35:13.881777 [info ] [MainThread]: 
+[0m20:35:13.881777 [info ] [MainThread]:   compiled code at target\compiled\ygz_dbt_databricks\models\example\schema.yml\not_null_my_second_dbt_model_id.sql
+[0m20:35:13.882901 [info ] [MainThread]: 
+[0m20:35:13.882901 [error] [MainThread]: [[31mERROR[0m]: in test unique_my_first_dbt_model_id (models\example\schema.yml)
+[0m20:35:13.883884 [error] [MainThread]:   Database Error in test unique_my_first_dbt_model_id (models\example\schema.yml)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_first_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 19 pos 5
+  compiled code at target\run\ygz_dbt_databricks\models\example\schema.yml\unique_my_first_dbt_model_id.sql
+[0m20:35:13.884776 [info ] [MainThread]: 
+[0m20:35:13.884776 [info ] [MainThread]:   compiled code at target\compiled\ygz_dbt_databricks\models\example\schema.yml\unique_my_first_dbt_model_id.sql
+[0m20:35:13.885781 [info ] [MainThread]: 
+[0m20:35:13.885781 [error] [MainThread]: [[31mERROR[0m]: in test unique_my_second_dbt_model_id (models\example\schema.yml)
+[0m20:35:13.886887 [error] [MainThread]:   Database Error in test unique_my_second_dbt_model_id (models\example\schema.yml)
+  [TABLE_OR_VIEW_NOT_FOUND] The table or view `dbt_ygz_project`.`default`.`my_second_dbt_model` cannot be found. Verify the spelling and correctness of the schema and catalog.
+  Search path: [`system`.`session`, `system`.`builtin`, `system`.`ai`, `dbt_ygz_project`.`default`].
+  If you did not qualify the name with a schema, verify the current_schema() output, or qualify the name with the correct schema and catalog.
+  To tolerate the error on drop use DROP VIEW IF EXISTS or DROP TABLE IF EXISTS. SQLSTATE: 42P01; line 19 pos 5
+  compiled code at target\run\ygz_dbt_databricks\models\example\schema.yml\unique_my_second_dbt_model_id.sql
+[0m20:35:13.887775 [info ] [MainThread]: 
+[0m20:35:13.887775 [info ] [MainThread]:   compiled code at target\compiled\ygz_dbt_databricks\models\example\schema.yml\unique_my_second_dbt_model_id.sql
+[0m20:35:13.887775 [info ] [MainThread]: 
+[0m20:35:13.888887 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=4 SKIP=0 NO-OP=0 REUSED=0 TOTAL=4
+[0m20:35:13.888887 [debug] [MainThread]: Command `dbt test` failed at 20:35:13.888887 after 37.99 seconds
+[0m20:35:13.890496 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238E826B200>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238EA0014C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000238890DD940>]}
+[0m20:35:13.890496 [debug] [MainThread]: Flushing usage events
+[0m20:35:15.399349 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:37:00.475119 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000141EADE13A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000141EDE80B90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000141ECEB5E20>]}
+
+
+============================== 20:37:00.479165 | 7eb5c423-9bbc-4721-a2bf-c94cbff22d34 ==============================
+[0m20:37:00.479165 [info ] [MainThread]: Running with dbt=1.12.0
+[0m20:37:00.479165 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\chuck\\Learning\\DBT_Azure_Databricks\\ygz_dbt_databricks', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt docs generate', 'log_path': 'C:\\Users\\chuck\\Learning\\DBT_Azure_Databricks\\ygz_dbt_databricks\\logs'}
+[0m20:37:01.209246 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m20:37:01.210564 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m20:37:01.210564 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m20:37:01.981329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7eb5c423-9bbc-4721-a2bf-c94cbff22d34', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000141F1516D20>]}
+[0m20:37:02.027271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7eb5c423-9bbc-4721-a2bf-c94cbff22d34', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000141EF47A540>]}
+[0m20:37:02.027271 [info ] [MainThread]: Registered adapter: databricks=1.12.3
+[0m20:37:02.261355 [debug] [MainThread]: checksum: bb5a7be7380b4bc8cfc970cd46992b6be61a6e35a0044e4bfabddd53d2ea5cb0, vars: {}, profile: ygz_dbt_databricks, target: dev, version: 1.12.0
+[0m20:37:02.404765 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m20:37:02.404765 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m20:37:02.404765 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m20:37:02.413538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7eb5c423-9bbc-4721-a2bf-c94cbff22d34', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001418B5871A0>]}
+[0m20:37:02.464802 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7eb5c423-9bbc-4721-a2bf-c94cbff22d34', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001418B5091F0>]}
+[0m20:37:02.465811 [info ] [MainThread]: Found 2 models, 4 data tests, 773 macros
+[0m20:37:02.466802 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7eb5c423-9bbc-4721-a2bf-c94cbff22d34', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000141EB037FE0>]}
+[0m20:37:02.472798 [info ] [MainThread]: 
+[0m20:37:02.473803 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m20:37:02.474800 [info ] [MainThread]: 
+[0m20:37:02.476804 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m20:37:02.476804 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m20:37:02.488924 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_dbt_ygz_project_default) - Creating connection
+[0m20:37:02.489910 [debug] [ThreadPool]: Acquiring new databricks connection 'list_dbt_ygz_project_default'
+[0m20:37:02.512967 [debug] [ThreadPool]: Using databricks connection "list_dbt_ygz_project_default"
+[0m20:37:02.512967 [debug] [ThreadPool]: On list_dbt_ygz_project_default: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "ygz_dbt_databricks", "target_name": "dev", "invocation_id": "7eb5c423-9bbc-4721-a2bf-c94cbff22d34", "connection_name": "list_dbt_ygz_project_default"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'dbt_ygz_project'
+  AND table_schema = 'default'
+
+  
+[0m20:37:02.512967 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:37:05.544481 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f18f27-44f3-103b-9c50-4cee9e4bb9e7) - Created
+[0m20:37:06.160537 [debug] [ThreadPool]: SQL status: OK in 3.650 seconds
+[0m20:37:06.172794 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f18f27-44f3-103b-9c50-4cee9e4bb9e7, command-id=01f18f27-4567-16ba-afe8-940280252bc9) - Closing
+[0m20:37:06.173797 [debug] [ThreadPool]: On list_dbt_ygz_project_default: Close
+[0m20:37:06.174459 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f18f27-44f3-103b-9c50-4cee9e4bb9e7) - Closing
+[0m20:37:06.366710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7eb5c423-9bbc-4721-a2bf-c94cbff22d34', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001418B526150>]}
+[0m20:37:06.378778 [debug] [Thread-2 (]: Began running node model.ygz_dbt_databricks.my_first_dbt_model
+[0m20:37:06.380752 [debug] [Thread-2 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.ygz_dbt_databricks.my_first_dbt_model) - Creating connection
+[0m20:37:06.381751 [debug] [Thread-2 (]: Acquiring new databricks connection 'model.ygz_dbt_databricks.my_first_dbt_model'
+[0m20:37:06.382369 [debug] [Thread-2 (]: Began compiling node model.ygz_dbt_databricks.my_first_dbt_model
+[0m20:37:06.389090 [debug] [Thread-2 (]: Writing injected SQL for node "model.ygz_dbt_databricks.my_first_dbt_model"
+[0m20:37:06.390265 [debug] [Thread-2 (]: Began executing node model.ygz_dbt_databricks.my_first_dbt_model
+[0m20:37:06.391841 [debug] [Thread-2 (]: Finished running node model.ygz_dbt_databricks.my_first_dbt_model
+[0m20:37:06.392986 [debug] [Thread-2 (]: Began running node model.ygz_dbt_databricks.my_second_dbt_model
+[0m20:37:06.393951 [debug] [Thread-2 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.ygz_dbt_databricks.my_second_dbt_model) - Creating connection
+[0m20:37:06.393951 [debug] [Thread-2 (]: Acquiring new databricks connection 'model.ygz_dbt_databricks.my_second_dbt_model'
+[0m20:37:06.394967 [debug] [Thread-2 (]: Began compiling node model.ygz_dbt_databricks.my_second_dbt_model
+[0m20:37:06.396953 [debug] [Thread-2 (]: Writing injected SQL for node "model.ygz_dbt_databricks.my_second_dbt_model"
+[0m20:37:06.398870 [debug] [Thread-2 (]: Began executing node model.ygz_dbt_databricks.my_second_dbt_model
+[0m20:37:06.399967 [debug] [Thread-2 (]: Finished running node model.ygz_dbt_databricks.my_second_dbt_model
+[0m20:37:06.399967 [debug] [Thread-2 (]: Began running node test.ygz_dbt_databricks.not_null_my_first_dbt_model_id.5fb22c2710
+[0m20:37:06.401570 [debug] [Thread-2 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.ygz_dbt_databricks.not_null_my_first_dbt_model_id.5fb22c2710) - Creating connection
+[0m20:37:06.401570 [debug] [Thread-2 (]: Acquiring new databricks connection 'test.ygz_dbt_databricks.not_null_my_first_dbt_model_id.5fb22c2710'
+[0m20:37:06.401570 [debug] [Thread-2 (]: Began compiling node test.ygz_dbt_databricks.not_null_my_first_dbt_model_id.5fb22c2710
+[0m20:37:06.419137 [debug] [Thread-2 (]: Writing injected SQL for node "test.ygz_dbt_databricks.not_null_my_first_dbt_model_id.5fb22c2710"
+[0m20:37:06.420153 [debug] [Thread-2 (]: Began executing node test.ygz_dbt_databricks.not_null_my_first_dbt_model_id.5fb22c2710
+[0m20:37:06.421756 [debug] [Thread-2 (]: Finished running node test.ygz_dbt_databricks.not_null_my_first_dbt_model_id.5fb22c2710
+[0m20:37:06.421756 [debug] [Thread-2 (]: Began running node test.ygz_dbt_databricks.unique_my_first_dbt_model_id.16e066b321
+[0m20:37:06.422811 [debug] [Thread-2 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.ygz_dbt_databricks.unique_my_first_dbt_model_id.16e066b321) - Creating connection
+[0m20:37:06.422811 [debug] [Thread-2 (]: Acquiring new databricks connection 'test.ygz_dbt_databricks.unique_my_first_dbt_model_id.16e066b321'
+[0m20:37:06.422811 [debug] [Thread-2 (]: Began compiling node test.ygz_dbt_databricks.unique_my_first_dbt_model_id.16e066b321
+[0m20:37:06.429765 [debug] [Thread-2 (]: Writing injected SQL for node "test.ygz_dbt_databricks.unique_my_first_dbt_model_id.16e066b321"
+[0m20:37:06.430766 [debug] [Thread-2 (]: Began executing node test.ygz_dbt_databricks.unique_my_first_dbt_model_id.16e066b321
+[0m20:37:06.431768 [debug] [Thread-2 (]: Finished running node test.ygz_dbt_databricks.unique_my_first_dbt_model_id.16e066b321
+[0m20:37:06.432279 [debug] [Thread-2 (]: Began running node test.ygz_dbt_databricks.not_null_my_second_dbt_model_id.151b76d778
+[0m20:37:06.432279 [debug] [Thread-2 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.ygz_dbt_databricks.not_null_my_second_dbt_model_id.151b76d778) - Creating connection
+[0m20:37:06.432279 [debug] [Thread-2 (]: Acquiring new databricks connection 'test.ygz_dbt_databricks.not_null_my_second_dbt_model_id.151b76d778'
+[0m20:37:06.432279 [debug] [Thread-2 (]: Began compiling node test.ygz_dbt_databricks.not_null_my_second_dbt_model_id.151b76d778
+[0m20:37:06.437279 [debug] [Thread-2 (]: Writing injected SQL for node "test.ygz_dbt_databricks.not_null_my_second_dbt_model_id.151b76d778"
+[0m20:37:06.439388 [debug] [Thread-2 (]: Began executing node test.ygz_dbt_databricks.not_null_my_second_dbt_model_id.151b76d778
+[0m20:37:06.440286 [debug] [Thread-2 (]: Finished running node test.ygz_dbt_databricks.not_null_my_second_dbt_model_id.151b76d778
+[0m20:37:06.440286 [debug] [Thread-2 (]: Began running node test.ygz_dbt_databricks.unique_my_second_dbt_model_id.57a0f8c493
+[0m20:37:06.441794 [debug] [Thread-2 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.ygz_dbt_databricks.unique_my_second_dbt_model_id.57a0f8c493) - Creating connection
+[0m20:37:06.441794 [debug] [Thread-2 (]: Acquiring new databricks connection 'test.ygz_dbt_databricks.unique_my_second_dbt_model_id.57a0f8c493'
+[0m20:37:06.442850 [debug] [Thread-2 (]: Began compiling node test.ygz_dbt_databricks.unique_my_second_dbt_model_id.57a0f8c493
+[0m20:37:06.449899 [debug] [Thread-2 (]: Writing injected SQL for node "test.ygz_dbt_databricks.unique_my_second_dbt_model_id.57a0f8c493"
+[0m20:37:06.451512 [debug] [Thread-2 (]: Began executing node test.ygz_dbt_databricks.unique_my_second_dbt_model_id.57a0f8c493
+[0m20:37:06.452568 [debug] [Thread-2 (]: Finished running node test.ygz_dbt_databricks.unique_my_second_dbt_model_id.57a0f8c493
+[0m20:37:06.454634 [debug] [MainThread]: Command end result
+[0m20:37:06.557197 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\target\manifest.json
+[0m20:37:06.561854 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\target\semantic_manifest.json
+[0m20:37:06.584899 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\target\osi_document.json
+[0m20:37:06.591803 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\target\run_results.json
+[0m20:37:07.174449 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=generate_catalog) - Creating connection
+[0m20:37:07.175485 [debug] [MainThread]: Acquiring new databricks connection 'generate_catalog'
+[0m20:37:07.175485 [info ] [MainThread]: Building catalog
+[0m20:37:07.178491 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=('dbt_ygz_project', 'default')) - Creating connection
+[0m20:37:07.178491 [debug] [ThreadPool]: Acquiring new databricks connection '('dbt_ygz_project', 'default')'
+[0m20:37:07.184132 [debug] [ThreadPool]: Using databricks connection "('dbt_ygz_project', 'default')"
+[0m20:37:07.185125 [debug] [ThreadPool]: On ('dbt_ygz_project', 'default'): /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "ygz_dbt_databricks", "target_name": "dev", "invocation_id": "7eb5c423-9bbc-4721-a2bf-c94cbff22d34", "connection_name": "('dbt_ygz_project', 'default')"} */
+
+    
+SELECT current_catalog()
+
+  
+[0m20:37:07.185125 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:37:07.867322 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f18f27-46ad-1687-9a92-56315ae129a8) - Created
+[0m20:37:08.842980 [debug] [ThreadPool]: SQL status: OK in 1.660 seconds
+[0m20:37:08.847665 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f18f27-46ad-1687-9a92-56315ae129a8, command-id=01f18f27-46ca-1211-a56a-6f0f072359bc) - Closing
+[0m20:37:08.853181 [debug] [ThreadPool]: Using databricks connection "('dbt_ygz_project', 'default')"
+[0m20:37:08.854190 [debug] [ThreadPool]: On ('dbt_ygz_project', 'default'): /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "ygz_dbt_databricks", "target_name": "dev", "invocation_id": "7eb5c423-9bbc-4721-a2bf-c94cbff22d34", "connection_name": "('dbt_ygz_project', 'default')"} */
+
+    
+SHOW TABLE EXTENDED IN `dbt_ygz_project`.`default` LIKE 'my_first_dbt_model|my_second_dbt_model'
+
+  
+[0m20:37:09.312948 [debug] [ThreadPool]: SQL status: OK in 0.460 seconds
+[0m20:37:09.318013 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f18f27-46ad-1687-9a92-56315ae129a8, command-id=01f18f27-4760-1866-982a-a2fdc402cf44) - Closing
+[0m20:37:09.319009 [debug] [ThreadPool]: On ('dbt_ygz_project', 'default'): Close
+[0m20:37:09.319009 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f18f27-46ad-1687-9a92-56315ae129a8) - Closing
+[0m20:37:09.513590 [debug] [MainThread]: Wrote artifact CatalogArtifact to C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\target\catalog.json
+[0m20:37:09.572507 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\target\manifest.json
+[0m20:37:09.577741 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\target\semantic_manifest.json
+[0m20:37:09.582246 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\target\osi_document.json
+[0m20:37:09.583249 [info ] [MainThread]: Catalog written to C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\target\catalog.json
+[0m20:37:09.584247 [debug] [MainThread]: Command `dbt docs generate` succeeded at 20:37:09.584247 after 9.43 seconds
+[0m20:37:09.584247 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000141EF4AA8D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000141ECD9BD70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001418B4B9F40>]}
+[0m20:37:09.585247 [debug] [MainThread]: Flushing usage events
+[0m20:37:11.029551 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:34:23.165409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263AF8E2C00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263AF197920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263AF79BC20>]}
+
+
+============================== 12:34:23.180328 | 3b8b74d1-ba3b-4561-8629-b83620ac510b ==============================
+[0m12:34:23.180328 [info ] [MainThread]: Running with dbt=1.12.0
+[0m12:34:23.180328 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\chuck\\Learning\\DBT_Azure_Databricks\\ygz_dbt_databricks', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\chuck\\Learning\\DBT_Azure_Databricks\\ygz_dbt_databricks\\logs'}
+[0m12:34:23.235932 [info ] [MainThread]: dbt version: 1.12.0
+[0m12:34:23.235932 [info ] [MainThread]: python version: 3.12.10
+[0m12:34:23.236938 [info ] [MainThread]: python path: C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\.venv_dbt\Scripts\python.exe
+[0m12:34:23.237932 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m12:34:32.001905 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m12:34:32.003862 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m12:34:32.006569 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m12:34:37.799101 [info ] [MainThread]: Using profiles dir at C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks
+[0m12:34:37.800066 [info ] [MainThread]: Using profiles.yml file at C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\profiles.yml
+[0m12:34:37.800066 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\dbt_project.yml
+[0m12:34:37.800066 [info ] [MainThread]: adapter type: databricks
+[0m12:34:37.800066 [info ] [MainThread]: adapter version: 1.12.3
+[0m12:34:37.919230 [info ] [MainThread]: Configuration:
+[0m12:34:37.920227 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:34:37.921223 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:34:37.922233 [info ] [MainThread]: Required dependencies:
+[0m12:34:37.923119 [debug] [MainThread]: Executing "git --help"
+[0m12:34:37.966378 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m12:34:37.966378 [debug] [MainThread]: STDERR: "b''"
+[0m12:34:37.966378 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:34:37.967378 [info ] [MainThread]: Connection:
+[0m12:34:37.967378 [info ] [MainThread]:   host: adb-7405607192769716.16.azuredatabricks.net
+[0m12:34:37.967378 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/04147fab6edc9014
+[0m12:34:37.967378 [info ] [MainThread]:   catalog: dbt_ygz_project
+[0m12:34:37.967378 [info ] [MainThread]:   schema: default
+[0m12:34:37.968378 [info ] [MainThread]: Registered adapter: databricks=1.12.3
+[0m12:34:39.125269 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m12:34:39.125269 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m12:34:40.175511 [info ] [MainThread]: Databricks adapter:   SPOG host (host_type='workspace'): no
+[0m12:34:40.175511 [info ] [MainThread]: Databricks adapter:   workspace_id (from ?o= in http_path): None
+[0m12:34:40.180876 [info ] [MainThread]: Databricks adapter:   databricks-sql-connector version: 4.3.0 (supported)
+[0m12:34:40.181886 [info ] [MainThread]: Databricks adapter:   databricks-sdk version: 0.117.0 (supported)
+[0m12:34:40.182886 [debug] [MainThread]: Using databricks connection "debug"
+[0m12:34:40.183934 [debug] [MainThread]: On debug: select 1 as id
+[0m12:34:40.184375 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:34:42.517504 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f18fad-0bf9-1dd9-997e-050bb6f179d5) - Created
+[0m12:34:43.249414 [debug] [MainThread]: SQL status: OK in 3.070 seconds
+[0m12:34:43.251382 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f18fad-0bf9-1dd9-997e-050bb6f179d5, command-id=01f18fad-0c70-1e2c-8e84-38d424513d01) - Closing
+[0m12:34:43.252541 [debug] [MainThread]: On debug: Close
+[0m12:34:43.252541 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f18fad-0bf9-1dd9-997e-050bb6f179d5) - Closing
+[0m12:34:43.452012 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:34:43.452012 [info ] [MainThread]: [32mAll checks passed![0m
+[0m12:34:43.455628 [debug] [MainThread]: Command `dbt debug` succeeded at 12:34:43.452012 after 20.67 seconds
+[0m12:34:43.455628 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263AF0B2060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263AF4B6A20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000263CD0839E0>]}
+[0m12:34:43.455628 [debug] [MainThread]: Flushing usage events
+[0m12:34:44.810576 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m13:49:02.983954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB10AE9820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB112464B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB0D61D1C0>]}
+
+
+============================== 13:49:02.983954 | 4558ea05-17ad-43a2-951c-e103b9171208 ==============================
+[0m13:49:02.983954 [info ] [MainThread]: Running with dbt=1.12.0
+[0m13:49:02.999816 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\chuck\\Learning\\DBT_Azure_Databricks\\ygz_dbt_databricks', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt docs serve', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\chuck\\Learning\\DBT_Azure_Databricks\\ygz_dbt_databricks\\logs'}
+[0m13:49:06.458768 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m13:49:06.458768 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m13:49:06.459767 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m13:49:13.443416 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4558ea05-17ad-43a2-951c-e103b9171208', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB2E417FE0>]}
+[0m13:49:13.524306 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4558ea05-17ad-43a2-951c-e103b9171208', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB105C8590>]}
+[0m18:15:48.433870 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+
+[0m18:15:48.563167 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\.venv_dbt\Lib\site-packages\dbt\cli\requires.py", line 190, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\.venv_dbt\Lib\site-packages\dbt\cli\requires.py", line 136, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\.venv_dbt\Lib\site-packages\dbt\cli\requires.py", line 287, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\.venv_dbt\Lib\site-packages\dbt\cli\requires.py", line 332, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\.venv_dbt\Lib\site-packages\dbt\cli\requires.py", line 379, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\.venv_dbt\Lib\site-packages\dbt\cli\main.py", line 322, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\chuck\Learning\DBT_Azure_Databricks\ygz_dbt_databricks\.venv_dbt\Lib\site-packages\dbt\task\docs\serve.py", line 29, in run
+    httpd.serve_forever()
+  File "C:\Users\chuck\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chuck\AppData\Local\Programs\Python\Python312\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\chuck\AppData\Local\Programs\Python\Python312\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m18:15:48.590890 [debug] [MainThread]: Command `dbt docs serve` failed at 18:15:48.590890 after 16005.77 seconds
+[0m18:15:48.604034 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB10AE9820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB2C4F20F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FB10C77560>]}
+[0m18:15:48.604034 [debug] [MainThread]: Flushing usage events
+[0m18:15:50.094342 [debug] [MainThread]: An error was encountered while trying to flush usage events
