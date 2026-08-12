@@ -16,5 +16,5 @@ logs/
 dbt.log
 .user.yml 
 
-.env
+.env*
 Claude/
