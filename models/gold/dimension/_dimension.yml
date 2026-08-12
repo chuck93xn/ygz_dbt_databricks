@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: dim_products
+    description: "Type 2 SCD dimension for products, one row per product version"
+    columns:
+      - name: product_sk
+        data_tests:
+          - unique
+          - not_null
+      - name: product_id
+        data_tests:
+          - not_null
+
+  - name: dim_users
+    description: "Type 1 dimension for users, one row per user"
+    columns:
+      - name: user_sk
+        data_tests:
+          - unique
+          - not_null
+      - name: user_id
+        data_tests:
+          - unique
+          - not_null

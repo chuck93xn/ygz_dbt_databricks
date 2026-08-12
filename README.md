@@ -34,7 +34,7 @@ Layered bronze → silver → gold, following the same medallion naming used in 
 
 - **Bronze** — raw source tables; `orders` is incrementally materialised, `products` is snapshotted for SCD Type 2.
 - **Silver** — cleaned/transformed models, referencing bronze (and the `products` snapshot) via `ref()`.
-- **Gold** — star schema: `fct_order` and `fct_review` fact tables, joined to `dim_product` and `dim_user` (SCD2 dimensions with surrogate keys) and a `dim_date` dimension.
+- **Gold** — star schema: `fct_order` and `fct_review` fact tables, joined to `dim_product`(SCD2 dimensions with surrogate keys) and `dim_user`.
 
 ## Testing
 

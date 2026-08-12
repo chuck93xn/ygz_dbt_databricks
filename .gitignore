@@ -17,3 +17,4 @@ dbt.log
 .user.yml 
 
 .env
+Claude/
