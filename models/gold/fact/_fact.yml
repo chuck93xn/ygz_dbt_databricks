@@ -1,0 +1,45 @@
+version: 2
+
+models:
+  - name: fact_orders
+    description: "Grain: one row per order line"
+    columns:
+      - name: order_id
+        data_tests:
+          - unique
+          - not_null
+      - name: product_sk
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_products')
+                field: product_sk
+          # dim_products history only starts at the first `dbt snapshot` run,
+          # so orders placed earlier can't be band-joined to any version. Known gap, kept visible.
+          - not_null:
+              config:
+                severity: warn
+      - name: user_sk
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_users')
+                field: user_sk
+
+  - name: fact_reviews
+    description: "Grain: one row per review"
+    columns:
+      - name: review_id
+        data_tests:
+          - unique
+          - not_null
+      - name: product_sk
+        data_tests:
+          - relationships:
+              arguments:
+                to: ref('dim_products')
+                field: product_sk
+          # same known gap as fact_orders.product_sk
+          - not_null:
+              config:
+                severity: warn
